@@ -3,20 +3,14 @@
 {% block content %}
 
  <header>
-    <div class="wrapper clearfix">
-       {{widget('companyheader', 'companyheader', {"defaultlogo": asset('shutter/images/egg.png')})|raw}}
+       {{widget('companyheader', 'companyheader', {"defaultlogo": asset('shutter/images/shutter.png')})|raw}}
        {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    </div>
 </header>
-
-<section>
-    {{widget('feature', 'featurehome', {"header": "Award Winning Search Engine Optimisation", "strapline":"Integer dictum orcin. Urna ipsum, pulvinar vitae sagittis in placerat ac nulla.","bgImg": asset('shutter/images/code-bg.jpg')})|raw}}
-</section>
 
 {{zone('main')|raw}}
 
 <footer>
-    <section class="wrapper clearfix">
+    <section>
         <article>
             {{widget('content', 'footercolumn1', {"content":"<h3>LOREM IPSUM</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
         </article>

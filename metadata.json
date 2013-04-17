@@ -1,0 +1,8 @@
+{
+	"name":"Shutter",
+	"thumbnail":"shutter.jpg",
+	"screenshot":"shutter.jpg",
+	"pageTypes":["about"],
+	"defaultColorSwatch":"Warmth 5",
+	"defaultFontSwatch":"Lato"
+}
