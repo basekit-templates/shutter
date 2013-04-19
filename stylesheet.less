@@ -1072,10 +1072,7 @@ header {
     width: 100%;
     background-color: none;
   }
-  .widget.extendednavigation ul.align-right li
-  {
-      background-image: none!important;
-  }
+
   .widget.extendednavigation ul li {
     width: 100%;
     padding: 1em 0 !important;
@@ -1100,7 +1097,6 @@ header {
     margin-left: 0;
     margin-top: 13px;
   }
-
   .widget.extendednavigation li:hover > ul li {
     text-align: center;
     width: 100%;
@@ -1110,9 +1106,30 @@ header {
   .widget.extendednavigation li:hover > ul li:last-child {
     border-bottom: 0;
   }
-  .widget.extendednavigation li:hover > ul > li:first-child > a {
-    padding-left: 0;
-    }
+
+  /* UL ALIGN RIGHT */
+  .widget.extendednavigation ul.align-right li
+  {
+    background-position: 10px 16px;
+  }
+  .widget.extendednavigation ul.align-right li:hover ul li {
+    text-align: right;
+  }
+  .widget.extendednavigation ul.align-right li:hover ul li a {
+    padding-right: 0;
+  }
+
+  /* UL ALIGN LEFT */
+  .widget.extendednavigation ul.align-left li:hover ul li {
+    text-align: left;
+  }
+   .widget.extendednavigation li:hover > ul > li:first-child > a {
+    padding: 0!important;
+   }
+   .widget.extendednavigation li:hover > ul > li > a {
+    padding: 0;
+   }
+
   .widget.feature h2 {
     font-size: 2.2em;
   }
@@ -1125,7 +1142,7 @@ header {
   }
   .widget.gallery p
   {
-      padding: 10px;
+    padding: 10px;
   }
 }
 
