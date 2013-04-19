@@ -16,21 +16,22 @@
 {{zone('main')|raw}}
 
 <footer>
-    <section class="wrapper clearfix">
-        <article>
-            {{widget('content', 'footercolumn1', {"content":"<h3>LOREM IPSUM</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
-        </article>
-        <article>
-           {{widget('content', 'footercolumn2', {"content":"<h3>ALAM THOAT</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
-        </article>
-        <article>
-            {{widget('content', 'footercolumn3', {"content":"<h3>KAREN FROAT</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
-        </article>
-        <article>
-            {{widget('content', 'footercolumn4', {"content":"<h3>DICTUM ORCIN</h3>"})|raw}}
-            {{widget('companyaddress', 'companyaddressfooter', {})|raw}}
-        </article>
-    </section>
+    <div class="wrapper clearfix">
+        <div class="responsivecolumns columns-three-33-34-33 columns-four-25-25-25-25">
+           <div class="column columns-four-first">
+                {{widget('content', 'footercolumn1', {"content":"<h3>LOREM IPSUM</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
+           </div>
+           <div class="column columns-four-second">
+                {{widget('content', 'footercolumn2', {"content":"<h3>ALAM THOAT</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
+           </div>
+           <div class="column columns-four-third">
+                {{widget('content', 'footercolumn3', {"content":"<h3>KAREN FROAT</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
+           </div>
+           <div class="column columns-four-fourth">
+                {{widget('content', 'footercolumn4', {"content":"<h3>DICTUM ORCIN</h3>"})|raw}} {{widget('companyaddress', 'companyaddressfooter', {})|raw}}
+           </div>
+        </div>
+    </div>
 </footer>
 
 {% endblock %}
