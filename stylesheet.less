@@ -62,7 +62,7 @@ p
     Document   : button
     Created on : 04-Jul-2012, 14:15:32
     Author     : Dom
-    Description: Button modernwhite
+    Description: Button shutter
 */
 
 
@@ -183,7 +183,7 @@ p
 .widget.image img
 {
     display:block;
-    max-width: 100%;
+    margin:0 auto;
 }
 
 .widget.image {
@@ -223,7 +223,6 @@ a {
   font-family:@font-swatch5-font-family;
   font-size:@font-swatch5-font-size;
   font-weight:@font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
   color:@color-swatch3;
   letter-spacing: @font-swatch4-letter-spacing;
   text-decoration: none;
@@ -376,7 +375,7 @@ header {
     Created on : December 12, 2012, 3:30:52 PM
     Author     : Dom
     Description:
-        Navigation modernwhite 
+        Navigation shutter 
 */
 
 .widget.navigation {
@@ -480,10 +479,25 @@ header {
   margin: 0;
 }
 
+.widget.extendednavigation ul.align-center li
+{
+    text-align: center;
+}
+
+.widget.extendednavigation ul.align-left li
+{
+    text-align: left;
+}
+
+.widget.extendednavigation ul.align-right li
+{
+    text-align: right;
+}
+
 .widget.extendednavigation ul li {
   float: left;
   display: block;
-  padding: 8px 1.8em;
+  padding: 1.1em 1.8em;
   font-family: @font-swatch6-font-family;
   font-size: @font-swatch5-font-size;
   color: @color-swatch4;
@@ -525,7 +539,7 @@ header {
   margin-left: -1.8em;
   z-index: 500;
   background-color: @color-swatch1;
-  padding-top: 36px;
+  padding-top: 44px;
   padding-bottom: 0!important;
   border-bottom: 4px solid @color-swatch4;
 }
@@ -749,7 +763,7 @@ header {
     Document   : twitter
     Created on : 04-Jul-2012, 14:15:32
     Author     : Dom
-    Description: Twitter modernwhite
+    Description: Twitter shutter
 */
 
 
@@ -805,7 +819,7 @@ header {
     Document   : Form
     Created on : 17-Dec-2012, 14:15:32
     Author     : Dom
-    Description: Form modernwhite
+    Description: Form shutter
 */
 
 .widget.contactform form {
@@ -837,7 +851,7 @@ header {
     font-size: @font-swatch5-font-size;
     color: @font-swatch5-color;
     background-color: lighten(@color-swatch2,50%);
-    background-image: url(assets/images/bg.png);
+    background-image: image('/shutter/images/bg.png');
     background-repeat: repeat;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -855,7 +869,7 @@ header {
     font-size: @font-swatch5-font-size;
     color: @font-swatch5-color;
     background-color: lighten(@color-swatch2,50%);
-    background-image: url(assets/images/bg.png);
+    background-image: image('/shutter/images/bg.png');
     background-repeat: repeat;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -925,7 +939,7 @@ header {
     color: @font-swatch5-color;
     border: darken(@color-swatch1,10%) solid 1px;
     padding: 12px 10px 12px 40px;
-    background-image: image('/modernwhite/images/twitter.png');
+    background-image: image('/shutter/images/twitter.png');
     background-repeat: no-repeat;
     background-position: 10px;
     -moz-border-radius: 6px;
@@ -942,7 +956,7 @@ header {
 .widget.tweet a:hover, .tweet a:active {
     background-color: darken(@color-swatch1,10%);
     border: darken(@color-swatch1,15%) solid 1px;
-    background-image: image('/modernwhite/images/twitter.png');
+    background-image: image('/shutter/images/twitter.png');
     background-repeat: no-repeat;
     background-position: 10px;
     cursor: pointer;
@@ -1018,7 +1032,7 @@ header {
     padding-top: 1em;
   }
   .widget.extendednavigation li:hover > ul {
-    padding-top: 26px;
+    padding-top: 33px;
   }
   .widget.extendednavigation ul li:first-child {
     padding-left: 0;
@@ -1056,6 +1070,11 @@ header {
   }
   .widget.extendednavigation ul {
     width: 100%;
+    background-color: none;
+  }
+  .widget.extendednavigation ul.align-right li
+  {
+      background-image: none!important;
   }
   .widget.extendednavigation ul li {
     width: 100%;
@@ -1068,8 +1087,11 @@ header {
             border-radius: 3px;
   }
   .widget.extendednavigation ul li a {
-
+    padding: 0 20px;
   }
+   .widget.extendednavigation ul li.folder span.text {
+    padding: 0 20px; 
+   }
   .widget.extendednavigation li:hover > ul {
     width: 100%;
     border-top: 2px solid lighten(@color-swatch4,10%);
@@ -1078,6 +1100,7 @@ header {
     margin-left: 0;
     margin-top: 13px;
   }
+
   .widget.extendednavigation li:hover > ul li {
     text-align: center;
     width: 100%;
@@ -1124,5 +1147,3 @@ header {
 .clearfix {
   *zoom: 1;
 }
-
-
