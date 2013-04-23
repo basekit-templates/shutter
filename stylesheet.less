@@ -5,7 +5,7 @@ body {
 
 h2, h3, h4, h5, p {
   margin: 0;
-  padding: 20px 0;
+  padding: 0 0 10px;
 }
 
 h1 {
@@ -237,7 +237,7 @@ a:hover {
 }
 
 hr.line {
-   background-color: @color-swatch3;
+   background-color: @color-swatch2;
    height: 3px;
    width: 100%;
    border: none;
@@ -851,7 +851,7 @@ header {
     font-size: @font-swatch5-font-size;
     color: @font-swatch5-color;
     background-color: lighten(@color-swatch2,50%);
-    background-image: image('/shutter/images/bg.png');
+    background-image: image('/shutter/images/form-bg.png');
     background-repeat: repeat;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -869,7 +869,7 @@ header {
     font-size: @font-swatch5-font-size;
     color: @font-swatch5-color;
     background-color: lighten(@color-swatch2,50%);
-    background-image: image('/shutter/images/bg.png');
+    background-image: image('/shutter/images/form-bg.png');
     background-repeat: repeat;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1072,10 +1072,7 @@ header {
     width: 100%;
     background-color: none;
   }
-  .widget.extendednavigation ul.align-right li
-  {
-      background-image: none!important;
-  }
+
   .widget.extendednavigation ul li {
     width: 100%;
     padding: 1em 0 !important;
@@ -1100,7 +1097,6 @@ header {
     margin-left: 0;
     margin-top: 13px;
   }
-
   .widget.extendednavigation li:hover > ul li {
     text-align: center;
     width: 100%;
@@ -1110,9 +1106,30 @@ header {
   .widget.extendednavigation li:hover > ul li:last-child {
     border-bottom: 0;
   }
-  .widget.extendednavigation li:hover > ul > li:first-child > a {
-    padding-left: 0;
-    }
+
+  /* UL ALIGN RIGHT */
+  .widget.extendednavigation ul.align-right li
+  {
+    background-position: 10px 16px;
+  }
+  .widget.extendednavigation ul.align-right li:hover ul li {
+    text-align: right;
+  }
+  .widget.extendednavigation ul.align-right li:hover ul li a {
+    padding-right: 0;
+  }
+
+  /* UL ALIGN LEFT */
+  .widget.extendednavigation ul.align-left li:hover ul li {
+    text-align: left;
+  }
+   .widget.extendednavigation li:hover > ul > li:first-child > a {
+    padding: 0!important;
+   }
+   .widget.extendednavigation li:hover > ul > li > a {
+    padding: 0;
+   }
+
   .widget.feature h2 {
     font-size: 2.2em;
   }
@@ -1125,7 +1142,7 @@ header {
   }
   .widget.gallery p
   {
-      padding: 10px;
+    padding: 10px;
   }
 }
 
