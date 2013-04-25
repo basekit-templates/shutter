@@ -57,6 +57,22 @@ p
   letter-spacing: @font-swatch4-letter-spacing;
 }
 
+blockquote {
+  background:@color-swatch2;
+  border-left:6px solid darken(@color-swatch2,10%);
+  margin:0;
+  padding: 14px 16px;
+  quotes:"\201C""\201D""\2018""\2019";
+}
+  blockquote:before {
+  font-family: georgia;
+  color:darken(@color-swatch2,20%);
+  content:open-quote;
+  font-size:4em;
+  line-height:.1em;
+  margin-right:.1em;
+}
+
 /* Button CSS */
 /* 
     Document   : button
@@ -696,13 +712,13 @@ header {
   color: @color-swatch1;
   padding: 0;
   font-size: 3em;
-  text-align: centre;
+  text-align: center;
 }
 .widget.feature h3 {
   color: @color-swatch1;
   letter-spacing: 0;
   font-size: 1.22em;
-  text-align: centre;
+  text-align: center;
 }
 
 .widget.feature button
