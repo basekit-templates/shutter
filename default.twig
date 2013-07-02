@@ -4,34 +4,30 @@
 
  <header>
     <div class="wrapper clearfix">
-       {{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/shutter.png')})|raw}}
+       {{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/logo.png')})|raw}}
        {{widget('extendednavigation', 'navigationheader', {})|raw}}
     </div>
 </header>
 
 <section>
-    {{widget('feature', 'featurehome', {"header": "Lorem Ipsum Dolor Amet Consectetur.", "strapline":"Etiam at fermentum purus. Pellentesque commodo urna sit amet magna.","buttonText":"LOREM IPSUM","bgImg": asset('images/feature-bg.jpg')})|raw}}
+    {{widget('feature', 'featurehome', {"header": "Lorem Ipsum Dolor Amet Consectetur.", "strapline":"Etiam at fermentum purus. Pellentesque commodo urna sit amet magna.", "buttonText":"Integrer a Tortor →","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
 </section>
 
-<div class="wrapper clearfix">
-  {{zone('main')|raw}}
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
 </div>
 
 <footer>
     <div class="wrapper clearfix">
-        <div class="responsivecolumns columns-three-33-34-33 columns-four-25-25-25-25">
-           <div class="column columns-four-first">
-                {{widget('content', 'footercolumn1', {"content":"<h3>LOREM IPSUM</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
-           </div>
-           <div class="column columns-four-second">
-                {{widget('content', 'footercolumn2', {"content":"<h3>ALAM THOAT</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
-           </div>
-           <div class="column columns-four-third">
-                {{widget('content', 'footercolumn3', {"content":"<h3>KAREN FROAT</h3><p>Pulvinar Vitae Alam</p><p>Integer Dictum Orcin</p><p>Donec Iquam Lorem</p><p>Ultricies Viverra</p>"})|raw}}
-           </div>
-           <div class="column columns-four-fourth">
-                {{widget('content', 'footercolumn4', {"content":"<h3>DICTUM ORCIN</h3>"})|raw}} {{widget('companyaddress', 'companyaddressfooter', {})|raw}}
-           </div>
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('content', 'footercolumn1', {"content":"<h2>Lorem Ip Soda</h2><p>Integer a Tortor Dui. Nullam nec ante mi. Morbi sodales urna sit amet mauris elementum quis rutrum lacus gravida. Proin feugia libero quis.</p>"})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                {{widget('content', 'footercolumn2', {"content":"<h2>Aliquam Sodales</h2><p>Copyright © 2013. All Rights Reserved.</p>"})|raw}}
+
+                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/basekit', 'facebook': 'https://www.facebook.com/TeamBaseKit', 'twitter': 'https://twitter.com/basekit', 'youtube': 'https://www.youtube.com/user/TeamBaseKit', 'rss': 'http://blogdiseno.basekit.es/feed/'})|raw}}
+            </div>
         </div>
     </div>
 </footer>
