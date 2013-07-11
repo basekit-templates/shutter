@@ -1,7 +1,7 @@
 {
 	"name":"Shutter",
-	"thumbnail":"shutter.jpg",
-	"screenshot":"shutter.jpg",
+	"thumbnail":"shutter.png",
+	"screenshot":"shutter.png",
 	"pageTypes":["about"],
 	"defaultColorSwatch":"Warmth 6",
 	"defaultFontSwatch":"Raleway"
