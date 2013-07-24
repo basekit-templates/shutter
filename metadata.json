@@ -3,6 +3,8 @@
 	"thumbnail":"shutter.png",
 	"screenshot":"shutter.png",
 	"pageTypes":["home"],
+    "defaultColorSwatch":"Warmth 6",
+    "defaultFontSwatch":"Raleway",
     "colorSwatches":
     {
         "Swatch 1": {
