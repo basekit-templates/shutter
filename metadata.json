@@ -1,19 +1,16 @@
 {
-	"name":"Shutter",
-	"thumbnail":"shutter.png",
-	"screenshot":"shutter.png",
-	"pageTypes":["home"],
-    "defaultColorSwatch":"Warmth 6",
-    "defaultFontSwatch":"Raleway",
+	"name":"Wishful",
+	"thumbnail":"wishful.png",
+	"screenshot":"wishful.png",
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#FFFFFF",
-            "color2":"#E0EEF0",
-            "color3":"#413E4A",
-            "color4":"#B38184",
-            "color5":"#9D8E8E",
-            "color6":"#4b494f",
+            "color1":"#ffffff",
+            "color2":"#eff2f6",
+            "color3":"#93dfe6",
+            "color4":"#444546",
+            "color5":"#9e9597",
+            "color6":"#8c8c8c",
             "color7":"#FFFFFF"
         },
         "Swatch 2": {
@@ -54,83 +51,91 @@
         }
     },
     "fontSwatch": {
-       "title": "Raleway",
+       "title": "Lato",
         "font1": {
-            "font-family": "Raleway",
-            "font-size": "21px",
+            "font-family": "Lato",
+            "font-size": "32px",
             "font-weight": "500",
-            "line-height": "28px",
+            "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "Raleway",
-            "font-size": "24px",
+            "font-family": "Lato",
+            "font-size": "28px",
             "font-weight": "inherit",
-            "line-height": "36px",
+            "line-height": "32px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "Raleway",
-            "font-size": "18px",
+            "font-family": "Lato",
+            "font-size": "22px",
             "font-weight": "inherit",
             "line-height": "28px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "Raleway",
+            "font-family": "Lato",
             "font-size": "16px",
-            "font-weight": "inherit",
-            "line-height": "26px",
+            "font-weight": "300",
+            "line-height": "28px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "2px"
         },
         "font5": {
-            "font-family": "Raleway",
+            "font-family": "Lato",
             "font-size": "14px",
             "font-weight": "500",
-            "line-height": "36px",
-            "color": "@color-swatch4",
+            "line-height": "28px",
+            "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "Raleway",
-            "font-size": "15px",
-            "font-weight": "600",
+            "font-family": "Lato",
+            "font-size": "12px",
+            "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch6",
-            "color-hover": "@color-swatch6",
-            "letter-spacing": "inherit",
-            "background-color": "@color-swatch3",
-            "background-color-hover": "@color-swatch3"
+            "color-hover": "lighten(@color-swatch6,10%)",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "@color-swatch2"
         },
         "font7": {
-            "font-family": "Raleway",
-            "font-size": "16px",
+            "font-family": "Lato",
+            "font-size": "12px",
             "font-weight": "inherit",
             "line-height": "26px",
             "color": "@color-swatch1",
-            "letter-spacing": "inherit",
-            "background-color": "@color-swatch2",
-            "background-color-hover": "@color-swatch7"
+            "letter-spacing": "2px",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,8%)"
         },
         "font8": {
-            "font-family": "Raleway",
-            "font-size": "40px",
+            "font-family": "Lato",
+            "font-size": "36px",
             "font-weight": "500",
-            "line-height": "50px",
+            "line-height": "42px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "Raleway",
-            "font-size": "24px",
+            "font-family": "Lato",
+            "font-size": "17px",
             "font-weight": "500",
-            "line-height": "36px",
+            "line-height": "30px",
             "color": "@color-swatch1",
-            "letter-spacing": "inherit"
+            "letter-spacing": "1px"
+        },
+        "font10": {
+            "font-family": "Lato",
+            "font-size": "22px",
+            "font-weight": "300",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "1px"
         }
     }
 }
