@@ -2,6 +2,11 @@
 	"name":"Shutter",
 	"thumbnail":"shutter.png",
 	"screenshot":"shutter.png",
+    "tags": {
+    "en": ["minimal", "dark", "clean", "business", "professional"],
+    "es": ["minimalista", "oscuro", "limpio", "corporativo", "profesional"],
+    "br": ["minimalista", "escuro", "limpo", "corporativo", "profissional"]
+    },
     "colorSwatches":
     {
         "Swatch 1": {
