@@ -3,9 +3,9 @@
 	"thumbnail":"shutter.png",
 	"screenshot":"shutter.png",
     "tags": {
-    "en": ["minimal", "dark", "clean", "business", "professional"],
-    "es": ["minimalista", "oscuro", "limpio", "corporativo", "profesional"],
-    "br": ["minimalista", "escuro", "limpo", "corporativo", "profissional"]
+    "en": ["minimal", "dark", "clean", "business", "professional", "stylish", "agency", "magazine", "creative", "elegant", "sophisticated", "media", "sans-serif"],
+    "es": ["minimalista", "oscuro", "limpio", "corporativo", "profesional", "estilo", "agencia", "revista", "creativo", "elegante", "sofisticado", "comunicacion", "sans-serif"],
+    "br": ["minimalista", "escuro", "limpo", "corporativo", "profissional", "estilo", "agência", "revista", "criativo", "elegante", "sofisticado", "mídia", "sans-serif"]
     },
     "colorSwatches":
     {
