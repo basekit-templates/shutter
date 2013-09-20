@@ -747,7 +747,8 @@ hr.line.align-right {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    margin-bottom: -50px;
+    margin-bottom: -310px;
+    max-height: 284px;
     background: @color-swatch1;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -779,6 +780,20 @@ hr.line.align-right {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+/* Lightbox */
+
+.lb-data .lb-caption, .lb-data .lb-number {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:lighten(@font-swatch5-color,50%);
+}
+
+.lb-data .lb-number {
+  font-size:bkscale(@font-swatch5-font-size,0.9);
 }
 
 /* =======================================
@@ -1633,6 +1648,13 @@ footer .footer2 .widget.profile form {
         font-size: .7em;
     }
 
+     /* GALLERY */
+
+    .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+    font-size:bkscale(@font-swatch5-font-size,0.9);
+    line-height:bkscale(@font-swatch5-line-height,0.9);
+    }
+
     /* SLIDESHOW */
 
     .widget.responsiveslideshow .slideshow-image-list, 
@@ -1740,7 +1762,11 @@ footer .footer2 .widget.profile form {
   .widget.responsiveslideshow .description {
     display:none;
   }
-    /* GALLERY */
+     /* GALLERY */
+
+    .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+    max-height: 150px;
+    }
 
     .widget.gallery ul.gallery-widget li
     {
