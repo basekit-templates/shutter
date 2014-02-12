@@ -4,14 +4,12 @@
 
 <div class="bk-pt-default">
 
-<header>
-    <div class="wrapper clearfix">
-        <div class="companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        </div>
-        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+<header class="bk-header wrapper clearfix">
+    <div class="companyheader clearfix">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
     </div>
+    {{widget('extendednavigation', 'navigationheader', {})|raw}}
 </header>
 
 <div class="main wrapper">
@@ -19,7 +17,7 @@
 </div>
 
 <!-- FOOTER !-->
-<footer>
+<footer class="bk-footer">
     <div class="wrapper">
         <div class="responsivecolumns columns-three-33-34-33">
             <div class="column columns-three-left">

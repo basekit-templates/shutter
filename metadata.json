@@ -87,11 +87,11 @@
             "font-weight": "300",
             "line-height": "28px",
             "color": "@color-swatch4",
-            "letter-spacing": "2px"
+            "letter-spacing": "inherit"
         },
         "font5": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "14px",
+            "font-size": "15px",
             "font-weight": "500",
             "line-height": "28px",
             "color": "@color-swatch5",
