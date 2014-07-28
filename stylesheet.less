@@ -45,23 +45,29 @@ header.bk-header {
     display: block;
     float: left;
     padding: 0;
-    width: 25%;
+    width: 30%;
+    @media @tablet {
+        width: 75%;
+    }
 }
 
 /* COMPANY NAME */
 
 .widget.companyname {
-    display: block;
-    float: left;
     margin-top: 7px;
 }
 
 /* LOGO */
 
 .widget.logo {
-    display: block;
-    float: left;
     margin-right: 14px;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 /* ===============================
@@ -106,7 +112,7 @@ footer.bk-footer {
     &.extendednavigation {
         float: right;
         position: relative;
-        width: 75%;
+        width: 70%;
         margin: 4px 0;
         ul {
             margin: 0;
@@ -137,6 +143,8 @@ footer.bk-footer {
     text-decoration: none;
 }
 
+
+
 /* DROPDOWN MENU */
 
 .widget.extendednavigation li:hover > ul {
@@ -164,6 +172,12 @@ footer.bk-footer {
     padding: 0;
 }
 
+.widget.extendednavigation ul li.selected {
+    span.text {
+      color: @color-swatch3;
+    }
+}
+
 /* ===============================
    FEATURE
    =============================== */
@@ -177,6 +191,7 @@ footer.bk-footer {
     padding: 6.5em 0;
     height: 500px;
     text-align: center;
+    padding: 20px 0 20px 0;
 }
 
 /* FEATURE TITLE */
@@ -1341,13 +1356,16 @@ footer.bk-footer .footer2 .widget.profile form {
     /* NAV */
 
     .widget .extendednavigation a.pull {
-        top: -38px;
+        top: 0;
+        margin-top: 15px;
     }
 
     .widget.extendednavigation {
         width: 100%;
         padding: 0;
         margin: 0;
+        .clearfix;
+        float: none;
     }
 
     /* NAV */
@@ -1428,7 +1446,7 @@ footer.bk-footer .footer2 .widget.profile form {
     }
 
     .widget.feature .feature-bgimg {
-        height: 220px;
+        min0height: 220px;
     }
 
     .widget.feature .content {
