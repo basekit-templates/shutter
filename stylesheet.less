@@ -64,6 +64,7 @@ header.bk-header {
 }
 
 .widget {
+    .clearfix;
     &.logo, &.companyname {
         display: inline-block;
         vertical-align: middle;
@@ -395,7 +396,8 @@ footer.bk-footer {
     padding: 2px 0;
 }
 
-.widget.button button {
+.widget.button button,
+.ecombasket-remove-button js-remove {
     font-family: @font-swatch7-font-family;
     font-size: @font-swatch7-font-size;
     font-weight: @font-swatch7-font-weight;
@@ -1072,6 +1074,7 @@ footer.bk-footer .footer2 .widget.profile form {
             -moz-border-radius: 2px;
             border-radius: 2px;
             h2 {
+                padding-top: 20px;
                 a {
                     color: @color-swatch4;
                 }
@@ -1119,7 +1122,7 @@ footer.bk-footer .footer2 .widget.profile form {
 .blog-post-metadata {
     background-color: transparent;
     background-image: none;
-    margin-top: 0;
+    margin-top: 30px;
     text-align: left;
 }
 
@@ -1420,11 +1423,18 @@ footer.bk-footer .footer2 .widget.profile form {
         clear: both;
       }
     }
-        .productlist-search label {
-        margin: 0px 0px -14px -85px;
+        .productlist-search {
 
-        @media @mobile {
-            margin: 0px;
+            input {
+                padding: 3px 5px 8px 5px;
+            }
+
+            label {
+                margin: 0px 0px -14px -85px;
+
+                @media @mobile {
+                    margin: 0px;
+            }
         }
     }
   }
@@ -1440,10 +1450,37 @@ footer.bk-footer .footer2 .widget.profile form {
   }
 }
 
+.widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group button {
+    padding: 5px 16px 10px 16px;
+}
+
     /*  Basket Icon  */
 
     .widget.ecombasket {
         margin-bottom: 2em;
+
+        .ecombasket-pull {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            padding: 8px 16px;
+            border: 1px solid darken(@color-swatch3,5%);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
+            text-decoration: none;
+            text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+            p {
+                font-family: @font-swatch7-font-family;
+                font-size: @font-swatch4-font-size;
+                font-weight: 600;
+                line-height: @font-swatch7-line-height;
+                color: @font-swatch7-color;
+                letter-spacing: @font-swatch7-letter-spacing;
+                background-color: @font-swatch7-background-color;
+            }
+        }
     }
 
     /*  Order Button  */
@@ -1477,7 +1514,7 @@ footer.bk-footer .footer2 .widget.profile form {
 
 .widget.ecomproduct .ecom-product .btn {
     font-family: @font-swatch7-font-family;
-    font-weight:@font-swatch7-font-weight;
+    font-weight: 600;
     line-height: @font-swatch7-line-height;
     letter-spacing: @font-swatch7-letter-spacing;
     background-color: @font-swatch7-background-color;
@@ -1755,6 +1792,24 @@ footer.bk-footer .footer2 .widget.profile form {
         list-style-type: none;
     }
 }
+
+button.btn.basket-summary-submit {
+            font-family: @font-swatch7-font-family;
+            font-weight:@font-swatch7-font-weight;
+            line-height: @font-swatch7-line-height;
+            letter-spacing: @font-swatch7-letter-spacing;
+            background-color: @font-swatch7-background-color;
+            color: @font-swatch7-color;
+            font-size: 1.1em;
+            padding: 10px 16px;
+            margin: 1em 0;
+            border: none;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            text-decoration: none;
+            text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+    }
 
 /* ===============================
    IPAD WIDTH
