@@ -1848,11 +1848,23 @@ button.btn.basket-summary-submit {
 
 @media only screen and (max-width: 768px) {
 
+
+    .companyheader:empty + [data-widget-type="extendednavigation"] .extendednavigation a.pull {
+        top: -20px;
+
+        &:after {
+            top: 12px;
+        }
+    }
+
     /* NAV */
 
     .widget .extendednavigation a.pull {
         top: 0;
-        margin-top: 15px;
+
+        &:after {
+            top: 0;
+        }
     }
 
     .widget.extendednavigation {
@@ -1870,7 +1882,7 @@ button.btn.basket-summary-submit {
         display: none;
         border-top: 1px solid @color-swatch2;
         padding: 0 0 20px;
-        margin: 14px 0 0;
+        margin: 20px 0 0;
     }
 
     .widget .extendednavigation ul li {
