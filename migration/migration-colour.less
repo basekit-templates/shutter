@@ -1,0 +1,102 @@
+    
+// -----------------------------
+//  Migration - Colour
+// -----------------------------
+
+
+// Heading Text
+.color__heading-text--light();
+
+
+// Heading Body
+.color__body-text--light();
+
+
+// Buttons
+.widget.button button,
+button.btn,
+.widget.profile form button,
+.btn,
+.contentgroup__link,
+.widget.contactform fieldset button.btn,
+.advancedcontactform fieldset button,
+.widget.dropbox button,
+.checkout-order-button,
+.checkout-empty-link,
+.widget.tweet a,
+.widget.paypalbuynow .widget.button.paypal,
+.ecombasket-checkout-link,
+.widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group button,
+.widget.ecomproduct .ecom-product .btn,
+.widget.ecomcheckout .checkout-order-button,
+.blog-list-footer.bk-footer a,
+.blogsearch form button,
+.productlist-search button,
+.widget.ecombasket .ecombasket-pull,
+.widget.signupform fieldset button.btn,
+.widget.socialicons span a {
+
+
+    .row--style-accent & {
+        background-color: @color--dark;
+        border-color: darken(@color--dark, 5%);
+        color: contrast(@color--dark, @color--accent, @color--light);
+    }
+
+    .row--style-dark & {
+        background-color: @color--accent;
+        border-color: darken(@color--accent, 5%);
+        color: contrast(@color--accent, @color--dark, @color--light);
+    }
+}
+
+
+
+
+// Text within a button
+.widget button span {
+
+
+    .row--style-accent & {
+        color: contrast(@color--dark, @color--accent, @color--light);
+    }
+
+    .row--style-dark & {
+        color: contrast(@color--accent, @color--dark, @color--light);
+    }
+}
+
+
+hr.line,
+.widget.contactform form,
+.advancedcontactform form,
+.widget.blogpostlist .blog-post-item {
+
+    .row--style-accent & {
+        background-color: fade(contrast(@color--accent, @color--dark, @color--light), 15%);
+    }
+    
+    .row--style-dark & {
+        background-color: fade(contrast(@color--dark, @color--accent, @color--light), 15%);
+    }
+}
+
+
+
+// Any borders used within the template
+.widget.blogpostlist .blog-post-list .blog-post-item,
+.widget.twitter ul.twitter li,
+.widget.ecomproductslist .ecom-productslist-products .ecom-productslist-product .ecom-productslist-title,
+.widget.blogpost .blog-post-item .blog-post-metadata time.blog-post-publish-date,
+.widget.blogpost .blog-post-item .blog-post-metadata div.blog-post-category,
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-cattag,
+.widget.ecombasketsummary .basket-summary-title {
+    
+    .row--style-accent & {
+        border-color: fade(contrast(@color--accent, @color--dark, @color--light), 25%);
+    }
+    
+    .row--style-dark & {
+        border-color: fade(contrast(@color--dark, @color--accent, @color--light), 25%);
+    }
+}
