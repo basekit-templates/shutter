@@ -9,23 +9,18 @@
 // Variables
 @site-container: 960px;
 @site-margin: auto;
-@site-padding: 5%;
 
 
 // Site container and spacing
 .empty-zone,
 #page-zones__main:empty,
 .canvas,
-#page-zones__main > .widget:not(.row) {
+#page-zones__main > .widget:not(.row),
+.row:not(.widget):not(.row--width-no-padding) .row__container {
     margin-left: @site-margin;
     margin-right: @site-margin;
     max-width: @site-container;
-
-    @media @tablet {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0 @site-padding;
-    }
+    width: 90%;
 }
 
 
