@@ -319,7 +319,6 @@ footer.bk-footer {
 
 .widget.content {
     padding: 0;
-    overflow: hidden;
 }
 
 .widget.content span.expand {
@@ -1328,7 +1327,7 @@ footer.bk-footer .footer2 .widget.profile form {
    ==================================== */
 
    .widget.ecomproduct .ecom-product .ecom-product-preview-image-wrap {
-        background-position: 0 3000%;
+        background-image: none!important;
    }
 
    .ecom-product-variation select,
@@ -2032,3 +2031,6 @@ button.btn.basket-summary-submit {
 .clearfix {
     *zoom: 1
 }
+
+
+@import "@{templateLocal}/migration.less";
