@@ -1,0 +1,80 @@
+
+#migrated-site {
+    
+
+
+
+    //  Template - Stylesheet overrides
+    // ---------------------------------
+
+
+    .canvas,
+    .main {
+        padding: 0;
+    }
+
+    .main.wrapper {
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .bk-footer {
+        margin-top: 0;
+    }
+
+
+
+
+    //  Migration - Container & Spacing
+    // -----------------------------------
+
+
+    .empty-zone,
+    #page-zones__main:empty,
+    .canvas,
+    #page-zones__main > .widget:not(.row),
+    .row:not(.widget):not(.row--width-no-padding) .row__container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 960px;
+        width: 90%;
+    }
+
+
+    // Adds spacing to a section when a widget follows it
+    #page-zones__main > .row + .widget:not(.row) {
+        margin-top: 20px;
+    }
+
+
+    // Adds spacing to a widget when a section follows it
+    #page-zones__main > .widget:not(.row) + .row {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+    // Readds spacing to the first widget in the zone - these values should replicate what was on the .main class in the template
+    .edit #page-zones__main-overlay + .widget:not(.row),
+    #page-zones__main > .widget:not(.row):first-child,
+    #page-zones__main > .row + .widget:not(.row) {
+        margin-top: 2em;
+        
+        @media @tablet {
+            margin-top: 2em;
+        }
+    }
+
+
+    // Readds spacing to the last widget in the zone - these values should replicate what was on the .main class in the template
+    #page-zones__main > .widget:not(.row):last-child {
+        margin-bottom: 3em;
+    } 
+
+
+    // Removed spacing from last section in the zone
+    #page-zones__main > .widget.row:last-child {
+        margin-bottom: 0;
+    }
+}

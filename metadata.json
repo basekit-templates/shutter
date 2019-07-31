@@ -4,6 +4,7 @@
 	"screenshot":"shutter-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes":["home"],
+    "versionTenCompatible": 1,
     "tags": {
     "en": ["minimal", "dark", "clean", "business", "professional", "stylish", "agency", "magazine", "creative", "elegant", "sophisticated", "media", "sans-serif"],
     "es": ["minimalista", "oscuro", "limpio", "corporativo", "profesional", "estilo", "agencia", "revista", "creativo", "elegante", "sofisticado", "comunicacion", "sans-serif"],
